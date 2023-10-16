@@ -1,0 +1,36 @@
+body{
+    padding: 30px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+
+  background-color: black;
+    
+}
+
+.section-set {
+    overflow-x: hidden;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+
+    
+}
+
+button{
+    
+    width: 400px;
+    font-size: x-large;
+    font-family:cursive;
+    background-color: skyblue;
+    list-style-type: none;
+    margin: 5px;
+    border-radius: 2px;
+    padding: 10px;
+}
