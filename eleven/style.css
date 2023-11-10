@@ -1,0 +1,33 @@
+*{
+    background-color: beige;
+    overflow-y: hidden;
+
+}
+
+.container2, .container1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.btnval{
+    height: 50px;
+    width: 150px;
+    background-color: aliceblue;
+    margin: 10px;
+    text-align: center;
+    padding-top: 25px;
+    border: 2px solid black;
+    
+
+}
+
+h4{
+    text-align: center;
+}
