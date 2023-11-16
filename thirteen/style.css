@@ -1,0 +1,23 @@
+body {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+input{
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+.section{
+    padding: 8px;
+    background-color: tomato;
+    border-radius: 10px;
+}
