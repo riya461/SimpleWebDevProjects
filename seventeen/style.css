@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(24, 24, 57);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    margin-bottom: -0.2rem;
+}
+form{
+    background-color: rgb(43, 43, 111);
+    height: fit-content;
+    padding: 10px;
+    margin-bottom: 3rem ;
+}
+
+.search{
+    position: relative;
+    left: 78%;
+}
+input{
+    padding: 0.3em;
+    border-radius: 20px;
+    background-color: rgb(43, 43, 111);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.search::placeholder{
+    color: white;
+}
+.movie{
+    margin:10px;
+    width:200px;
+
+}
+.section {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0.5rem;
+    height: 15vh;
+    background-color: rgb(43, 43, 111);
+
+}
+.title{
+    text-transform: capitalize;
+}
+.rating{
+    position:relative;
+    left: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.val{
+    font-size: small;
+    background-color: rgb(24, 24, 57);
+    padding: 0.5rem;
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem;
+}
+.overview{
+    
+    width: 200px;
+    position: relative;
+    top: -35%;
+}
+.text-val {
+    background-color: aliceblue;
+    color: black;
+    padding: 0.5rem;
+    display: none;
+    overflow: auto;
+   
+}
+
+.val.green{
+    color: green;
+}
+.val.red{
+    color: red;
+}
+.movie:hover .text-val{
+    display: block;
+}
