@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #3c8bd6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.kinetic {
+    position: relative;
+    height: 80px;
+    width: 80px;
+
+}
+.kinetic::before,
+.kinetic::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #fff;
+  animation: rotateA 2s linear infinite;
+}
+
+.kinetic::before {
+  transform: rotate(90deg);
+  animation: rotateB 2s linear infinite;
+}
+
+@keyframes rotateA {
+  /* 0% - 25% = 0.5s  rotate -180deg => 0 deg */
+  0% {
+    transform: rotate(-180deg);
+  }
+  /* 25% - 50% = 0.5s  no movement */
+  25%,
+  50% {
+    transform: rotate(0deg);
+  }
+  /* 50% - 75% = 0.5s  rotate 0deg => 180deg*/
+  75%,
+  100% {
+    transform: rotate(180deg);
+  }
+  /* 75% - 100% = 0.5s  no movement */
+  /* 100% - 0% = instant jump 180deg => -180deg */
+}
+
+@keyframes rotateB {
+  /* 0% - 25% = 0.5s  no movement*/
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+  /* 25% - 50% = 0.5s  rotate 90deg => 270deg */
+  /* 50% - 75% = 0.5s  no movement*/
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+  /* 75% - 100% = 0.5s  rotate 270deg => 450deg */
+  100% {
+    transform: rotate(450deg);
+  }
+  /* 100% - 0% = instant jump 450deg => 90deg */
+}
