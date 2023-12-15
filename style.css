@@ -1,6 +1,6 @@
 body{
-    padding: 30px;
-    display: flex;
+  padding: 30px;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -11,15 +11,12 @@ body{
 }
 
 .section-set {
-    overflow-x: hidden;
-  background-color: black;
-  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
-
+  
     
 }
 
