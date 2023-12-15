@@ -5,17 +5,18 @@ body{
   justify-content: center;
   flex-direction: column;
   margin: 0;
-
   background-color: black;
     
 }
 
 .section-set {
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
+
   
     
 }
@@ -23,6 +24,8 @@ body{
 button{
     
     width: 400px;
+  cursor: pointer;
+
     font-size: x-large;
     font-family:cursive;
     background-color: skyblue;
@@ -31,3 +34,4 @@ button{
     border-radius: 2px;
     padding: 10px;
 }
+

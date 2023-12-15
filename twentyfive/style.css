@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+
+}
+nav{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(28, 27, 27);
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+.content{
+    margin: 50px;
+  }
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 40vh;
+    background-image: url('https://media.istockphoto.com/id/1426559579/photo/female-tourist-enjoying-watching-hot-air-balloons-flying-in-the-sky-at-rooftop-of-hotel-where.jpg?s=612x612&w=is&k=20&c=5-QP6v3MTR-2ZmonAsostgqVIG-0XA1la11O8fuELLU=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style-type: none;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+.active {
+    background-color: white;
+    color: black;
+}
+.active .nav-links   a{
+    color: black;
+}
