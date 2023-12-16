@@ -1,0 +1,51 @@
+
+body{
+    background-color: rebeccapurple;
+}
+.container{
+    margin: 180px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden;
+    user-select: none;
+    background-color: lavender;
+
+}
+
+#password{
+   border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    margin: 30px;
+}
+
+.pass-len{
+    margin: 30px;
+}
+.upper-inc{
+    margin: 30px;
+
+}
+
+.low-inc{
+    margin: 30px;
+
+}
+.num-inc{
+    margin: 30px;
+}
+.sym-inc{
+    margin: 30px;
+}
+
+.btn {
+    margin: 30px;
+    padding: 10px 20px;
+}
+.far {
+    font-size: 22px;
+}

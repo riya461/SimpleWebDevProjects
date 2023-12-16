@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Password Generator</h1>
+        <div class="password">
+            <h3 type="text" id="password" ></h3>
+            <button class="btn" id="btn" onclick="copy()">
+                <i class="far fa-clipboard"></i>
+            </button>
+
+            <div class="pass-len">
+                <label for="slider">Password Length:</label>
+                <input type="number" min="1" max="100" value="10" id="length">
+            </div>
+            <div class="upper-inc">
+            <label for="uppercase">Include uppercase letters</label>
+            <input type="checkbox" name="uppercase" id="uppercase">
+        </div>
+        <div class="low-inc">
+            <label for="lowercase">Include lowercase letters</label>
+            <input type="checkbox" name="lowercase" id="lowercase">
+        </div>
+        <div class="num-inc">
+            <label for="number">Include numbers</label>
+            <input type="checkbox" name="number" id="numbers">
+
+        </div>
+        <div class="sym-inc">
+            
+            <label for="symbol">Include symbols</label>
+            <input type="checkbox" name="symbol" id="symbol">
+        </div>
+            <button class="btn" id="generate" >Generate Password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
