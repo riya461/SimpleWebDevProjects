@@ -8,24 +8,32 @@ const search = document.getElementById('search')
 
 async function getUser(username) {
     try {
-        const { data } = await axios(APIURL + username)
+        const response = await fetch('https://api.github.com/users/'+ username )
 
+        console.log(response)
+        const data = await response.json()
+        console.log(data)
         createUserCard(data)
         getRepos(username)
     } catch(err) {
-        if(err.response.status == 404) {
-            createErrorCard('No profile with this username')
-        }
+            console.log('No profile with this username')
+        
     }
 }
 
 async function getRepos(username) {
     try {
-        const { data } = await axios(APIURL + username + '/repos?sort=created')
+       
+        const response = await fetch('https://api.github.com/users/'+ username + '/repos?sort=created')
+
+        console.log(response)
+        const data = await response.json()
+        console.log(data)
 
         addReposToCard(data)
     } catch(err) {
-        createErrorCard('Problem fetching repos')
+        console.log(err)
+        // createErrorCard('Problem fetching repos')
     }
 }
 
@@ -40,8 +48,8 @@ function createUserCard(user) {
 
             </div>
             <div class="user-info">
-            <h2>${user.name}</h2>
-            <p>${user.bio}</p>
+            <h2>${userID}</h2>
+            <p>${userBio}</p>
                 <ul>
                     <li><div class="num">${user.followers}</div>Followers</li>
                     <li><div class="num">${user.following}</div>Following</li>
@@ -49,20 +57,8 @@ function createUserCard(user) {
                 </ul>
           
         
-            <div class="repos">
-                <a href="#" class="repo">
-                    <div class="repo-name">Repo 1</div>
-
-                    
-                </a>
-                <a href="#" class="repo">
-                    <div class="repo-name">Repo 2</div>
-                    
-                </a>
-                <a href="#" class="repo">
-                    <div class="repo-name">Repo 3</div>
-                    
-                </a>
+            <div class="repos" id="repos">
+                
                 
            </div>
             </div>
@@ -84,19 +80,21 @@ function createErrorCard(msg) {
 }
 
 function addReposToCard(repos) {
-    const reposEl = document.getElementById('repos')
+    repos.slice(0,3).forEach( repo => {
+const reposEl = document.getElementById('repos')
+reposEl.classList.add('repos')
+const repoEl = document.createElement('a')
+repoEl.classList.add('repo')
+const reponame = document.createElement('div')
+reponame.classList.add('repo-name')
+repoEl.href = repo.html_url
+repoEl.target = '_blank'
+reponame.innerText = repo.name
 
-    repos
-        .slice(0, 5)
-        .forEach(repo => {
-            const repoEl = document.createElement('a')
-            repoEl.classList.add('repo')
-            repoEl.href = repo.html_url
-            repoEl.target = '_blank'
-            repoEl.innerText = repo.name
 
-            reposEl.appendChild(repoEl)
-        })
+repoEl.appendChild(reponame)
+reposEl.appendChild(repoEl)
+})  
 }
 
 form.addEventListener('submit', (e) => {

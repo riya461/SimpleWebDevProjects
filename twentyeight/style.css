@@ -44,12 +44,12 @@ body {
 .user-profile {
     display: flex;
     align-items: center;
-    margin: 0;
     
 }
 .user-profile img{
-    width: 150px;
-    height: 150px;
+    margin-right: 23px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     border: 5px solid  rgb(67, 67, 206);
 }
@@ -64,9 +64,8 @@ body {
     
 }
 .user-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+    justify-content: space-between;
+    
     
 }
 .repos{
@@ -104,10 +103,10 @@ ul {
     color: aliceblue;
     text-decoration: none;
     background-color: rgb(49, 28, 142);
-    
+    margin: 3px;
     padding: 4px;
 }
-@media (max-width : 600px) {
+@media (max-width : 830px) {
     .card{
         flex-direction: column;
         align-items: center;
@@ -124,4 +123,11 @@ ul {
         align-items: center;
         margin: 10px;
     }
+}
+@media (max-width : 600px) {
+    .card{
+        width: 90vw;
+    }
+    
+    
 }
