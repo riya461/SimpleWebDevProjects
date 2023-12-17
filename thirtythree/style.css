@@ -1,0 +1,92 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background-color: rgb(0, 183, 255);
+
+}
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    
+}
+.add{
+    height: 10vh;
+    width: 100%;
+
+}
+.notes-header{
+    width: 94.2%;
+    height: 3vh;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    align-items: center;
+
+
+}
+.notes-header button{
+    border-radius: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.icons{
+    font-size: 30px;
+    color: white;
+    
+}
+.add button{
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+
+
+}
+.notes-edit{
+    cursor: pointer;
+}
+.notes-delete {
+    cursor: pointer;
+}
+.notes-area textarea{
+    
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+.main {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f5f5f5;
+    height: 200px;
+    width: 392px;
+
+}
+.hidden {
+    display: none;
+}
