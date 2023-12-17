@@ -1,17 +1,13 @@
 body{
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin: 0;
-  background-color: black;
+  background-color: white;
     
 }
 
 .section-set {
 
-  display: flex;
+  display:flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -22,16 +18,28 @@ body{
 }
 
 button{
-    
-    width: 400px;
+  width: 350px;
+
   cursor: pointer;
 
     font-size: x-large;
     font-family:cursive;
     background-color: skyblue;
     list-style-type: none;
-    margin: 5px;
-    border-radius: 2px;
+    border: none;
     padding: 10px;
 }
 
+img{
+    width: 350px;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  a{
+    width: 350px;
+    margin: 10px;
+    border: 10px solid skyblue;
+    height:fit-content;
+  }

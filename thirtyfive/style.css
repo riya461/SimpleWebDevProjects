@@ -1,0 +1,56 @@
+.image{
+    width: 50vw;
+    height: 40vh;
+    border: 2px solid rgb(53, 160, 195);
+   box-shadow: 2px 2px 5px 2px rgb(53, 160, 195);
+   
+}
+
+body{
+    background-color: white;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+
+}
+.container{
+    position: relative;
+    height: 100vh;
+
+}
+.imagez{
+
+    position: absolute;
+    top: 15%;
+    left: 25%; 
+    display: none;
+}
+.active{
+    display: block;
+}
+.but {
+    position: absolute;
+    top: 56%;
+    left: 25%;
+    
+    
+    
+}
+.images{
+    transition: transform 0.5s ease-in-out;
+}
+.but button{
+    width: 25vw;
+    background-color: rgb(53, 160, 195);
+    border: none;
+    color: black;
+    border-radius: 2px ;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.but button:hover{
+    opacity: 0.8;
+}
